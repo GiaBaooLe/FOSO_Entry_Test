@@ -33,18 +33,18 @@ export const BreadCrumb: React.FC = () => {
 
   return (
     <div className="p-4 py-4">
-      <Breadcrumb>
-        {allCrumbs.map((crumb, index) => {
-          const isLast = index === allCrumbs.length - 1;
-          return isLast ? (
-            <Breadcrumb.Item key={crumb.path}>{crumb.name}</Breadcrumb.Item>
-          ) : (
-            <Breadcrumb.Item  key={crumb.path}>
-              <Link to={crumb.path}>{crumb.name}</Link>
-            </Breadcrumb.Item>
-          );
-        })}
-      </Breadcrumb>
+    <Breadcrumb
+  items={allCrumbs.map((crumb, index) => {
+    const isLast = index === allCrumbs.length - 1;
+    return {
+      title: isLast ? (
+        crumb.name
+      ) : (
+        <Link to={crumb.path}>{crumb.name}</Link>
+      ),
+    };
+  })}
+/>
     </div>
   );
 };

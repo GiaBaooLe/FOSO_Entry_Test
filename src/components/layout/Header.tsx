@@ -4,7 +4,7 @@ import { useState } from "react";
 import type { CartItem } from "../../types/type";
 
 export const Header: React.FC = () => {
-  const [cartItems, setCartItems] = useState<CartItem[]>([
+  const [cartItems] = useState<CartItem[]>([
     {
       id: "1",
       name: "Lọc dầu nhớt động cơ JS C307J",
@@ -96,7 +96,7 @@ export const Header: React.FC = () => {
       <img
         className="w-[36px] h-[36px]"
         src="/images/icon/vietNamIcon.png"
-        alt=""
+        alt="VietNam"
       />
       <div className="flex px-1">
         <div className="font-semibold  flex items-center">EN</div>
@@ -163,8 +163,8 @@ export const Header: React.FC = () => {
         <div className="flex justify-center rounded-3xl items-center space-x-1 cursor-pointer hover:bg-[#E6F1FF] px-2 py-1">
           <img
             className="w-7 h-7 md:w-9 md:h-9"
-            src="/images/icon/User Circle.png"
-            alt=""
+            src="/images/icon/userCircle.png"
+            alt="userCirle"
           />
           <span className="inline-block text-xs md:text-base">Tài khoản</span>
         </div>

@@ -3,7 +3,7 @@ import type { ProductListProps } from "../../types/type";
 
 import React, { useState } from "react";
 import { DownOutlined, MenuOutlined, RightOutlined } from "@ant-design/icons";
-import { Link } from "react-router";
+
 
 export const CustomDropdown: React.FC<ProductListProps> = ({ product }) => {
   const [hoveredCategory, setHoveredCategory] = useState<string | null>(
@@ -112,7 +112,7 @@ export const CustomDropdown: React.FC<ProductListProps> = ({ product }) => {
                       <div className="w-fit mx-auto bg-gradient-to-r from-[#FFD666] to-[#FFAB00] rounded-full px-2 sm:px-3 py-1 text-xs text-[#B71D18] font-bold flex items-center space-x-1 mb-2">
                         <img
                           src="/images/icon/Like.png"
-                          alt=""
+                          alt="price"
                           className="w-4 h-4"
                         />
                         <span className="text-[#7A0916]">Giá cực sốc</span>

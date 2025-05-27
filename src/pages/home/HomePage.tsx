@@ -63,63 +63,14 @@ export const HomePage = () => {
     <Header />
     <SubHeader product={products} />
 
-{/* <div className="px-4 md:px-10 lg:px-20 xl:px-32 py-8">
 
-      <BreadCrumb />
-      <img
-        className="w-full h-[250px] md:h-[450px] object-cover"
-        src="/images/banner/banner.png"
-        alt=""
-      />
-
-      <ProductSliderComponent products={products} />
-
-      <div className="flex flex-col lg:flex-row pt-10 bg-gray-100 gap-6">
-        <div className="w-full lg:w-1/4">
-          <FilterComponent
-            filterGroups={filterGroups}
-            onFilterChange={onFilterChange}
-          />
-        </div>
-        <div className="w-full lg:w-3/4">
-          <div className="flex flex-col md:flex-row justify-between gap-4 items-start md:items-center">
-            <div className="text-xl font-bold">Danh sách sản phẩm</div>
-            <div className="flex space-x-3 items-center">
-              <div className="font-medium">Sắp xếp theo:</div>
-              <FilterRelevent />
-            </div>
-          </div>
-
-          {loading ? (
-            <div className="flex justify-center items-center h-64">
-              <Spin size="large" />
-            </div>
-          ) : products.length === 0 ? (
-            <div className="text-center text-gray-500 py-20 text-lg">
-              Không có sản phẩm nào
-            </div>
-          ) : (
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 pt-10">
-              {products.map((product) => (
-                <div
-                  key={product.id}
-                  className="bg-white rounded shadow p-4 w-full flex flex-col min-h-[500px]"
-                >
-                  <ProductCard product={product} />
-                </div>
-              ))}
-            </div>
-          )}
-        </div>
-      </div>
-    </div> */}
     <div className="px-2 sm:px-4 md:px-4 lg:px-5 xl:px-10 3xl:px-32 py-4 md:py-8">
 
   <BreadCrumb />
   <img
     className="w-full h-[150px] sm:h-[200px] md:h-[250px] lg:h-[350px] xl:h-[450px] object-cover rounded"
     src="/images/banner/banner.png"
-    alt=""
+    alt="banner"
   />
 
   <ProductSliderComponent products={products} />
