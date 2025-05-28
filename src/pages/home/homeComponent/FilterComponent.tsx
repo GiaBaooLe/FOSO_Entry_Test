@@ -24,7 +24,8 @@ export const FilterComponent = ({
       >
         {group.options.map((opt) => (
           <Checkbox key={opt.value} value={opt.value}>
-            <Link to={`/danh-muc-san-pham/${opt.label}`}>
+          <Link to={`/danh-muc-san-pham/${opt.value}`}>
+
               <span className="hover:text-blue-500 text-black hover:underline">
                 {opt.label}
               </span>
