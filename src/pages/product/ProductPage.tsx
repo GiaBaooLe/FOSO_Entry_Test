@@ -110,11 +110,46 @@ const [sortOption, setSortOption] = useState<string>("");
                       src={product.imageUrl} alt={product.name} width={80} height={80} className="object-contain"
                     />
                   </div>
-                  <div className="p-2 sm:p-3">
+                  <div className="p-2 sm:p-3 ">
                     <div className="text-xs sm:text-base line-clamp-2 font-semibold">{product.name}</div>
                     <div className="line-clamp-1 text-xs sm:text-sm">Lọc giadsasdsa dasdasd asdasdas asdas dasdasd sasdsa adssad asddasda ó động cơ</div>
-                    <StarRating onChange={(val) => console.log("Rated:", val)} />
-                    <span className="text-xs sm:text-base">200000 đ</span>
+                    
+                     
+                        <div>
+
+                      
+              <div className="w-fit bg-gradient-to-r from-[#FFD666] to-[#FFAB00] rounded-full px-3 py-1 text-xs text-[#B71D18] font-bold flex items-center space-x-1 mt-5">
+                <img src="/images/icon/Like.png" alt="" className="w-4 h-4" />
+                <span className="text-[#7A0916]">Giá cực sốc</span>
+                <p>-10%</p>
+              </div>{" "}  
+
+
+              <div>
+              <StarRating onChange={(val) => console.log("Rated:", val)} /></div>
+              <div className="flex justify-between ">
+                <div className=" ">
+                  <div className="flex items-center text-md text-gray-700">
+<p>Giá: </p> <p className="font-semibold text-[#B71D18]"> {new Intl.NumberFormat('vi-VN', {
+        style: 'currency',
+        currency: 'VND',
+      }).format(Number((product.price)))}</p>
+                  </div>
+                  
+                <div>   <p className="text-xs line-through"> {new Intl.NumberFormat('vi-VN', {
+        style: 'currency',
+        currency: 'VND',
+      }).format(Number((product.price)))}</p></div>
+                </div>
+               
+               
+               
+                <button className="w-24 mt-2 h-8 hover:bg-[#025FCA] hover:text-[#E6F1FF] bg-[#E6F1FF] border-none rounded-md text-[#025FCA] font-bold">
+                  Mua ngay
+                </button>
+                <div></div>
+              </div>{" "}
+            </div>
                   </div>
                 </div>
               ))}
