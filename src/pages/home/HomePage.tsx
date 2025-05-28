@@ -57,7 +57,7 @@ export const HomePage = () => {
     <div className="flex flex-col min-h-screen">
   <main className="flex-grow bg-gray-100">
     <div className="w-full">
-      <img className="w-full" src="/images/icon/SmallOne.png" alt="" />
+      <img className="w-full" src="/images/icon/smallOne.png" alt="" />
     </div>
 
     <Header />

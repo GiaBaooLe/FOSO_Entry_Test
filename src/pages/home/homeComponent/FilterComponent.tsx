@@ -69,7 +69,7 @@ export const FilterComponent = ({
   return (
     <div>
       <div className="flex p-3 bg-white border-b-2 border-gray-200">
-        <img src="/images/filterIcon.png" alt="" />
+        <img src="/images/icon/filterIcon.png" alt="" />
         <p className="text-2xl text-[#0373F3] font-bold">Bộ Lọc</p>
       </div>
 
